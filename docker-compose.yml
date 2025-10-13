@@ -3,7 +3,9 @@ version: '3.8'
 
 services:
   app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - '3000:3000'
     environment:
@@ -14,9 +16,11 @@ services:
     volumes:
       - .:/app
       - /app/node_modules
+      - /app/.next
+    restart: unless-stopped
 
   db:
-    image: postgres:15
+    image: postgres:15-alpine
     environment:
       - POSTGRES_DB=nextjs_starter
       - POSTGRES_USER=postgres
@@ -25,6 +29,7 @@ services:
       - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
 
 volumes:
   postgres_data:
