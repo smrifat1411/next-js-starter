@@ -1,0 +1,2 @@
+# This file ensures the migrations directory is tracked by git
+# Prisma will create migration files here when you run prisma migrate dev
