@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 export function Spinner(
   props: React.PropsWithChildren<{
     className?: string;
-  }>,
+  }>
 ) {
   return (
     <div role="status">
@@ -11,7 +11,7 @@ export function Spinner(
         aria-hidden="true"
         className={cn(
           `fill-primary-foreground text-primary dark:fill-primary dark:text-primary/30 h-8 w-8 animate-spin`,
-          props.className,
+          props.className
         )}
         viewBox="0 0 100 101"
         xmlns="http://www.w3.org/2000/svg"

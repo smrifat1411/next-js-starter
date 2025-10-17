@@ -22,7 +22,7 @@ export function LoadingOverlay({
         {
           [`bg-background fixed top-0 left-0 z-100 h-screen w-screen`]:
             fullPage,
-        },
+        }
       )}
     >
       <Spinner className={spinnerClassName} />
