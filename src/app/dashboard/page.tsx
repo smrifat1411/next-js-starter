@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-const DashboardPage = async (props: Props) => {
+const DashboardPage = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
   const data = await response.json();
 

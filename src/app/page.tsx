@@ -1,6 +1,6 @@
 export default async function Home() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const data = await response.json();
+  // Simulate API call for loading test
+  await fetch('https://jsonplaceholder.typicode.com/posts');
 
   return (
     <div className="container mx-auto px-4 py-16">
