@@ -1,3 +1,4 @@
+'use client'
 // Example: Click outside hook
 import { useEffect, useRef } from 'react';
 
