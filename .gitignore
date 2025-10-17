@@ -12,10 +12,8 @@
 
 # testing
 /coverage
-/test-results/
-/playwright-report/
-/playwright/.cache/
-/.swc/
+/.nyc_output/
+junit.xml
 
 # next.js
 /.next/
@@ -23,6 +21,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -108,12 +107,7 @@ temp/
 .next/static/js/
 .next/static/webpack/
 
-# Additional testing
-.nyc_output/
-junit.xml
-
 # Additional build outputs
-dist/
 lib/
 es/
 cjs/
@@ -121,13 +115,35 @@ cjs/
 # Additional cache directories
 .cache/
 .parcel-cache/
-.eslintcache
 .stylelintcache
 .turbo/
 .swc/
+.eslintcache
+.prettiercache
+.terser-cache/
+.rollup.cache/
+.webpack/
+.vite/
+.nuxt/
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+.pnpm-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Build tool caches
+.turbo/
+.turbo-cache/
+.turbo-tmp/
+.vercel/
+.netlify/
+.railway/
 
 # Additional logs
-*.log
-logs/
 lerna-debug.log*
 pnpm-debug.log*
+yarn-debug.log*
+npm-debug.log*

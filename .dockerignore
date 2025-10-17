@@ -8,9 +8,7 @@ pnpm-debug.log*
 # Testing
 coverage
 .nyc_output
-test-results
-playwright-report
-playwright/.cache
+junit.xml
 
 # Next.js
 .next
@@ -49,21 +47,6 @@ next-env.d.ts
 
 # OS
 Thumbs.db
-
-# Git
-.git
-.gitignore
-README.md
-CHANGELOG.md
-CONTRIBUTING.md
-
-# Docker
-Dockerfile
-docker-compose.yml
-.dockerignore
-
-# CI/CD
-.github
 
 # Logs
 logs
@@ -113,6 +96,8 @@ temp
 .next/static/chunks
 .next/static/css
 .next/static/media
+.next/static/js
+.next/static/webpack
 
 # Additional build outputs
 lib
@@ -123,6 +108,34 @@ cjs
 .cache
 .parcel-cache
 .stylelintcache
+.turbo
+.swc
+.eslintcache
+.prettiercache
+.terser-cache
+.rollup.cache
+.webpack
+.vite
+.nuxt
+
+# Package manager caches
+.npm
+.yarn
+.pnpm-store
+.pnpm-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Build tool caches
+.turbo
+.turbo-cache
+.turbo-tmp
+.vercel
+.netlify
+.railway
 
 # Additional logs
 lerna-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+npm-debug.log*
